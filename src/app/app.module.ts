@@ -16,3 +16,7 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+//angular audio api
+//https://www.npmjs.com/package/angular-audio-context
+//npm install @types/webaudioapi
