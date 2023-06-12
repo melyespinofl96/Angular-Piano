@@ -20,10 +20,13 @@ export class AppComponent implements OnInit {
 
   }
 
-  onMouseDown(pitch: number) {
+  getPitch(pitch: number){
+    this.pitch = pitch
+    console.log(pitch)
+  }
+
+  onMouseDown() {
     this.generateTone();
-    this.pitch = pitch;
-    console.log(this.pitch)
   }
   
   onMouseUp() {
@@ -48,12 +51,12 @@ export class AppComponent implements OnInit {
     this.oscillator.start();
   }
 
-  /*
+  
   ngOnDestroy() {
     window.removeEventListener('mousedown', this.onMouseDown);
     window.removeEventListener('mouseup', this.onMouseUp);
   }
-  */
+  
 }
 
 
