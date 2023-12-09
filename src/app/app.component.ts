@@ -51,7 +51,6 @@ export class AppComponent implements OnInit {
     this.oscillator.start();
   }
 
-  
   ngOnDestroy() {
     window.removeEventListener('mousedown', this.onMouseDown);
     window.removeEventListener('mouseup', this.onMouseUp);
